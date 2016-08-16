@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>estrutura switch</title>
+    <script>
+var nota1 = Number(document.getElementById'nota1'.value);
+var nota2 = Number(document.getElementById'nota2'.value);
+var nota3 = Number(document.getElementById'nota3'.value);
+
+var media = parseInt(((nota1+nota2+nota3)/3));
+var resultado;
+
+switch (media) {
+  case 10:
+  case 9:
+  case 8:
+  case 7: resultado = "Aprovado!";
+    break;
+  case 6:
+  case 5: resultado = "Em exame";
+    break;
+  default: "Reprovado";
+    break;
+
+}
+    </script>
+
+  </head>
+  <body>
+    <input type="number" name ="name" value="calcular" onclick="calcularMedia()">
+    <input type="number" name ="name" value="calcular" onclick="calcularMedia()">
+    <input type="number" name ="name" value="calcular" onclick="calcularMedia()">
+    <input type="button" name ="name" value="calcular" onclick="calcularMedia()">
+  </body>
+</html>
